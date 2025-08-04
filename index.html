@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🌐 Responsive Interactive Web App</h1>
+
+  <div class="container">
+    <!-- Quiz Section -->
+    <div class="card">
+      <h2>🧠 Quiz</h2>
+      <div id="question"></div>
+      <div class="options" id="options"></div>
+      <div id="result"></div>
+    </div>
+
+    <!-- Joke Section -->
+    <div class="card">
+      <h2>😂 Random Joke</h2>
+      <button class="fetch-joke" onclick="getJoke()">Fetch Joke</button>
+      <div id="joke">Click the button to see a joke!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

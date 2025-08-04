@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.options button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options button:hover:not(:disabled) {
+  background-color: #d5d5d5;
+}
+
+.option-btn.correct {
+  background-color: #4CAF50 !important; /* Green */
+  color: #fff;
+}
+
+.option-btn.incorrect {
+  background-color: #f44336 !important; /* Red */
+  color: #fff;
+}
+
+button.fetch-joke {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196F3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button.fetch-joke:hover {
+  background-color: #1976D2;
+}
+
+#joke {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 98%;
+  }
+}
